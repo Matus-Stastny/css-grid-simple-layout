@@ -71,7 +71,18 @@
             "footer footer";
         }
     }
-    
+    @media (max-width: 500px) {
+        .container {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto 1fr auto auto; 
+            grid-template-areas: 
+                'header'
+                'nav'
+                'content'
+                'side-bar'
+                'footer';
+        }
+    }
 
 </style>
 
