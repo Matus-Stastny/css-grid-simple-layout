@@ -36,6 +36,29 @@
         min-height: 100vh;
         grid-template-columns: minmax(auto, 200px) 1fr minmax(auto, 200px);
         grid-template-rows: minmax(auto, 50px) 1fr minmax(auto, 50px);
+        grid-template-areas:
+            'header header header'
+            'nav content side-bar'
+            'footer footer footer';
+    }
+    header {
+        grid-area: header;
+        background-color: #0D355A;
+    }
+    content {
+        grid-area: content;
+    }
+    nav {
+        grid-area: nav;
+        background-color: #c55;
+    }
+    aside {
+        grid-area: side-bar;
+        background-color: #B00B1E;
+    }
+    footer {
+        grid-area: footer;
+        background-color: #690;
     }
 
 </style>
